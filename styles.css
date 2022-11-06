@@ -1,6 +1,6 @@
 * {
     font-family: 'Roboto';
-    font-size: 23px;
+    font-size: 1.5vw;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -11,13 +11,114 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 3.75fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .header {
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.top-left {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 1vw;
+}
+
+.top-left button {
+    justify-self: end;
+    padding-top: 0.5vh
+}
+
+input {
+    background-color: #e2e8f0;
+    border-radius: 15px;
+    height: 4.5vh;
+    border: none;
+}
+
+.top-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    padding-left: 2vw;
+}
+
+.notification {
+    justify-self: end;
+}
+
+.user {
+    justify-self: start;
+
+}
+
+.user {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 2.5vh;
+}
+
+.lower-left {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+    margin-left: 2vh;
+    gap: 1vw;
+}
+
+.profile-photo {
+    justify-self: end;
+}
+
+.welcome {
+    display: grid;
+    justify-items: start;
+    gap: 5px;
+}
+
+.welcome-top {
+    font-size: 1vw;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    gap: 22px;
+    padding-right: 2.5vw;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.buttons button {
+    background-color: #0ea5e9;
+    border-radius: 22px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: .4vw;
+    padding-bottom: .4vw;
+    color: white;
+    font-size: 1.2vw;
+    width: 7vw;
+    height: 2.8vw;
 }
 
 .sidebar {
@@ -51,12 +152,12 @@ li p, .logo p {
 }
 
 .logo p {
-    font-size: 30px;
+    font-size: 2vw;
     padding-left: 0.5vw;
 }
 
 .main-content {
-    background-color: lightgray;
+    background-color: #e2e8f0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
